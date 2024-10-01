@@ -1,0 +1,36 @@
+.infos {
+  padding: 30px 80px 40px 40px;
+  background-color: #FBDBCD;
+}
+.infos .info-titre {
+  padding-bottom: 20px;
+}
+.infos .info-titre h1 {
+  color: #AA5246;
+  font-size: 28px;
+  font-weight: 600;
+}
+.infos .info-titre p {
+  font-weight: 700;
+}
+.infos .info-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.infos .info-container .info-item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.infos .info-container .info-item .fa-solid {
+  text-align: center;
+  align-content: center;
+  color: #AA5246;
+  font-size: 30px;
+}
+.infos .info-container .info-item p {
+  font-size: 16px;
+  font-weight: 400;
+}/*# sourceMappingURL=info.css.map */

@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: $color-title;
+
+    .footer-container {
+        margin: auto;
+        max-width: 1240px;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .footer-left {
+            display: flex;
+            gap: 30px;
+
+            h4 {
+                color: #fff;
+                font-size: 12px;
+            }
+        }
+        .footer-right {
+            font-family: "Josefin";
+            color: #fff;
+            font-weight: 100;
+            font-size: 13px;
+        }
+    }
+}

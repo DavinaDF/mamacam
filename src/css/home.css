@@ -1,0 +1,33 @@
+.home {
+  max-width: 1240px;
+  margin: auto;
+}
+.home .container {
+  margin-top: 10px;
+  min-height: 80%;
+  max-height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 10px;
+}
+.home .container .left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home .container .left .social-link {
+  padding: 20px;
+  background-color: #FBDBCD;
+  display: flex;
+  justify-content: space-around;
+}
+.home .container .left .social-link i {
+  color: #AA5246;
+  font-size: 40px;
+}
+.home .container .right {
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=home.css.map */
