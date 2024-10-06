@@ -1,0 +1,14 @@
+.traiteur {
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  gap: 2%;
+
+  .traiteur-left {
+    width: 49%;
+  }
+
+  .traiteur-right {
+    width: 49%;
+  }
+}

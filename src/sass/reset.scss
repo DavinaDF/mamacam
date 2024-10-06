@@ -1,56 +1,60 @@
-
 @font-face {
   font-family: "Gotham";
-  src: 
-    local('Gotham'), 
-    url('../assets/fonts/Gotham-Black.otf') format('opentype'),
-    url('../assets/fonts/Gotham-Medium.otf') format('opentype'),
-    url('../assets/fonts/Gotham-Thin.otf') format('opentype'),
-    url('../assets/fonts/Gotham-Ultra.otf') format('opentype'),
-    url('../assets/fonts/Gotham-XLight.otf') format('opentype'),
+  src: local("Gotham"),
+    url("../assets/fonts/Gotham-Black.otf") format("opentype"),
+    url("../assets/fonts/Gotham-Medium.otf") format("opentype"),
+    url("../assets/fonts/Gotham-Thin.otf") format("opentype"),
+    url("../assets/fonts/Gotham-Ultra.otf") format("opentype"),
+    url("../assets/fonts/Gotham-XLight.otf") format("opentype");
 }
 @font-face {
   font-family: "Josefin";
-  src: local('Josefin'), url('../assets/fonts/JosefinSans-VariableFont_wght.ttf') format('truetype')
+  src: local("Josefin"),
+    url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
 
 $color-title: #a95146;
 $color-text: #43413a;
 $color-container-light: #fef3ef;
-$color-container-darker: #FBDBCD;
-$color-contrast: #00463C;
-
+$color-container-darker: #fbdbcd;
+$color-contrast: #00463c;
 
 * {
-    margin: 0;
-  }
-  
-  h1, h2, h3, h4 {
-    font-family: "Gotham";
-    text-decoration: none;
-  }
-  
-  img {
-    overflow-clip-margin:unset;
-    overflow: hidden;
-  }
-  
-  ul
-  {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gotham";
+  text-decoration: none;
+}
+
+img {
+  overflow-clip-margin: unset;
+  overflow: hidden;
+}
+
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  }
-  
-  a{
-    text-decoration: none;
-  }
+}
 
-  p {
-    font-family: "Josefin";
-    color: $color-text;
-  }
+button {
+  border-style: none;
+}
 
-  body {
-    height: 100%;
-  }
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Josefin";
+  color: $color-text;
+}
+
+body {
+  height: 100vh;
+}

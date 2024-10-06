@@ -1,15 +1,14 @@
 .banner {
-    margin: auto;
-    margin-top: 20px;
-    padding: 10px 6%;
-    max-width: 1240px;
-    background-color: rgb(204,218,216);
-    font-family: "Gotham";
-    font-size: 18px;
-    font-weight: 500;
-    color: #00463C !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 100%;
+  padding: 1% 5%;
+  background-color: rgb(204, 218, 216);
+  font-family: "Gotham";
+  font-size: 12px;
+  font-weight: 500;
+  color: #00463c !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

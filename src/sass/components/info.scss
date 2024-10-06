@@ -1,41 +1,43 @@
 .infos {
-    padding: 30px 80px 40px 40px;
-    background-color: $color-container-darker;
+  padding: 20px 50px 20px 30px;
+  background-color: $color-container-light;
 
-    .info-titre {
-        padding-bottom: 20px;
-        h1 {
-            color: #AA5246;
-            font-size: 28px;
-            font-weight: 600;
-        }
-        p {
-            font-weight: 700;
-        }
+  .info-titre {
+    padding-bottom: 20px;
+    h1 {
+      color: #aa5246;
+      font-size: 28px;
+      font-weight: 600;
     }
-
-    .info-container {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        .info-item {
-            display: flex;
-            justify-content: flex-start;
-            gap: 20px;
-
-            .fa-solid {
-                text-align: center;
-                align-content: center;
-                color: #AA5246;
-                font-size: 30px;
-            }
-            p {
-                font-size: 16px;
-                font-weight: 400;
-            }
-        }
+    p {
+      font-family: "Gotham";
+      font-weight: 100;
+      font-size: 16px;
     }
+  }
 
+  .info-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .info-item {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+
+      .fa-solid {
+        text-align: center;
+        align-content: center;
+        color: #aa5246;
+        font-size: 30px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
 }
