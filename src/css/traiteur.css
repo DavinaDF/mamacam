@@ -1,0 +1,12 @@
+.traiteur {
+  max-width: 1240px;
+  margin: auto;
+  display: flex;
+  gap: 2%;
+}
+.traiteur .traiteur-left {
+  width: 49%;
+}
+.traiteur .traiteur-right {
+  width: 49%;
+}/*# sourceMappingURL=traiteur.css.map */
