@@ -1,6 +1,51 @@
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham"), url("../assets/fonts/Gotham-Black.otf") format("opentype"), url("../assets/fonts/Gotham-Medium.otf") format("opentype"), url("../assets/fonts/Gotham-Thin.otf") format("opentype"), url("../assets/fonts/Gotham-Ultra.otf") format("opentype"), url("../assets/fonts/Gotham-XLight.otf") format("opentype");
+  src: url("../assets/fonts/Gotham/gothamthin-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamthin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamxlight-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamxlight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamlight-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamlight-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothambook-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothambook-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothammedium-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothammedium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothambold-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothambold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamblack-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamblack-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamultra-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamultra-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 @font-face {
   font-family: "Josefin";
@@ -14,8 +59,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Gotham";
   text-decoration: none;
+  font-family: "Gotham";
 }
 
 img {
@@ -30,10 +75,13 @@ ul {
 }
 
 button {
+  font-family: "Gotham";
   border-style: none;
 }
 
 a {
+  font-family: "Gotham";
+  font-weight: 100;
   text-decoration: none;
 }
 

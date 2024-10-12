@@ -1,0 +1,33 @@
+{
+  "traiteur": {
+    "titre": "Je serais ravie de vous accompagner pour un événement professionnel ou person￾nel sur mesure.",
+    "paragraphe": "Contactez-moi via le formulaire ci-dessous, en me donnant le plus de renseignements possible (description de la prestation souhaitée, budget, allergies, ...",
+    "champs": [
+      {
+        "label": "Nom et prénom (ou société)",
+        "type": "text",
+        "size": "full"
+      },
+      {
+        "label": "Date de l'évènement",
+        "type": "date",
+        "size": "half"
+      },
+      {
+        "label": "Nombre de personnes",
+        "type": "number",
+        "size": "half"
+      },
+      {
+        "label": "Message",
+        "type": "textarea",
+        "size": "full"
+      }
+    ]
+  },
+  "contact": {
+    "titre": "",
+    "paragraphe": "",
+    "champs": [{}]
+  }
+}

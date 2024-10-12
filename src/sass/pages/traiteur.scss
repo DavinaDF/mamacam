@@ -1,14 +1,83 @@
 .traiteur {
   max-width: 1240px;
-  margin: auto;
+  margin: 20px auto;
   display: flex;
+  justify-content: space-around;
   gap: 2%;
 
   .traiteur-left {
     width: 49%;
+    object-fit: contain;
+
+    .photo-container {
+      max-height: 500px;
+      margin-top: 20px;
+      display: flex;
+      gap: 2%;
+    }
   }
 
   .traiteur-right {
     width: 49%;
+    padding: 30px;
+    background-color: $color-container-light;
+
+    h3 {
+      color: #aa5246;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    ul {
+      margin: 6% 0;
+      font-family: "Josefin";
+      font-weight: 350;
+      font-size: 16px;
+
+      li {
+        margin: 5px;
+        padding-left: 20px;
+        list-style: inside;
+      }
+    }
+
+    form {
+      max-width: 400px;
+
+      label {
+        font-family: "Josefin";
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        input {
+          color: $color-text;
+          height: 30px;
+          border: solid 2px;
+          border-color: #a9524637;
+          border-radius: 6px;
+        }
+        .half {
+          width: 200px;
+        }
+        textarea {
+          color: $color-text;
+          width: 400px;
+          border: solid 2px;
+          border-color: #a9524637;
+          border-radius: 6px;
+        }
+      }
+      .form_button {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        background-color: $color-container-darker;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
   }
 }

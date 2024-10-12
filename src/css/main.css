@@ -1,6 +1,51 @@
 @font-face {
   font-family: "Gotham";
-  src: local("Gotham"), url("../assets/fonts/Gotham-Black.otf") format("opentype"), url("../assets/fonts/Gotham-Medium.otf") format("opentype"), url("../assets/fonts/Gotham-Thin.otf") format("opentype"), url("../assets/fonts/Gotham-Ultra.otf") format("opentype"), url("../assets/fonts/Gotham-XLight.otf") format("opentype");
+  src: url("../assets/fonts/Gotham/gothamthin-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamthin-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamxlight-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamxlight-webfont.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamlight-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamlight-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothambook-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothambook-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  /* font-display: swap; */
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothammedium-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothammedium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothambold-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothambold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamblack-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamblack-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham";
+  src: url("../assets/fonts/Gotham/gothamultra-webfont.woff2") format("woff2"), url("../assets/fonts/Gotham/gothamultra-webfont.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 @font-face {
   font-family: "Josefin";
@@ -14,8 +59,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Gotham";
   text-decoration: none;
+  font-family: "Gotham";
 }
 
 img {
@@ -30,10 +75,13 @@ ul {
 }
 
 button {
+  font-family: "Gotham";
   border-style: none;
 }
 
 a {
+  font-family: "Gotham";
+  font-weight: 100;
   text-decoration: none;
 }
 
@@ -51,7 +99,6 @@ body {
   height: 50px;
   margin-top: 40px;
   position: relative;
-  color: black;
   background-color: #aa5246;
   display: flex;
   flex-direction: row;
@@ -77,17 +124,22 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.header .header-nav-left .nav-active h3,
-.header .header-nav-right .nav-active h3 {
-  color: #fff;
-  background-color: #fff;
-  opacity: 0.2;
-}
-.header .header-nav-left h2,
-.header .header-nav-right h2 {
+.header .header-nav-left .nav-inactive h2,
+.header .header-nav-right .nav-inactive h2 {
+  font-family: "Gotham";
   color: #fff;
   font-size: 16px;
+  font-weight: 300;
   text-align: center;
+}
+.header .header-nav-left .nav-active h2,
+.header .header-nav-right .nav-active h2 {
+  width: 100%;
+  height: 100%;
+  font-family: "Gotham";
+  text-align: center;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .header .header-nav-left {
   margin-left: 6%;
@@ -218,12 +270,21 @@ body {
 
 .traiteur {
   max-width: 1240px;
-  margin: auto;
+  margin: 20px auto;
   display: flex;
+  justify-content: space-around;
   gap: 2%;
 }
 .traiteur .traiteur-left {
   width: 49%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.traiteur .traiteur-left .photo-container {
+  max-height: 500px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 }
 .traiteur .traiteur-right {
   width: 49%;
@@ -233,19 +294,21 @@ body {
   margin: auto;
   margin-top: 20px;
   width: 100%;
-  padding: 1% 0;
+  padding: 10px 30px;
   background-color: rgb(204, 218, 216);
-  font-family: "Gotham";
-  font-size: 12px;
-  font-weight: 500;
-  color: #00463c !important;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.banner h2 {
+  font-family: "Gotham";
+  font-size: 16px;
+  font-weight: 500;
+  color: #00463c !important;
+}
 
 .infos {
-  padding: 20px 50px 20px 30px;
+  padding: 30px 50px 30px 30px;
   background-color: #fef3ef;
 }
 .infos .info-titre {
@@ -253,7 +316,7 @@ body {
 }
 .infos .info-titre h1 {
   color: #aa5246;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 600;
 }
 .infos .info-titre p {

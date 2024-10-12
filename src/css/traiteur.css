@@ -1,11 +1,20 @@
 .traiteur {
   max-width: 1240px;
-  margin: auto;
+  margin: 20px auto;
   display: flex;
+  justify-content: space-around;
   gap: 2%;
 }
 .traiteur .traiteur-left {
   width: 49%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.traiteur .traiteur-left .photo-container {
+  max-height: 500px;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
 }
 .traiteur .traiteur-right {
   width: 49%;
