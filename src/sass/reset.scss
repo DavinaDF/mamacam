@@ -23,7 +23,7 @@
   font-family: "Gotham";
   src: url("../assets/fonts/Gotham/gothambook-webfont.woff2") format("woff2"),
     url("../assets/fonts/Gotham/gothambook-webfont.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   /* font-display: swap; */
 }
@@ -67,7 +67,24 @@ $color-container-light: #fef3ef;
 $color-container-darker: #fbdbcd;
 $color-contrast: #00463c;
 
-* {
+// * {
+//   margin: 0;
+// }
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div {
   margin: 0;
 }
 
@@ -77,6 +94,7 @@ h3,
 h4 {
   text-decoration: none;
   font-family: "Gotham";
+  margin: 0;
 }
 
 img {
@@ -96,6 +114,7 @@ button {
 }
 
 a {
+  margin: 0;
   font-family: "Gotham";
   font-weight: 100;
   text-decoration: none;
@@ -104,8 +123,4 @@ a {
 p {
   font-family: "Josefin";
   color: $color-text;
-}
-
-body {
-  height: 100vh;
 }

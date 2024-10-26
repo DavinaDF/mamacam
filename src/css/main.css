@@ -178,7 +178,6 @@ body {
 
 .home {
   max-width: 1240px;
-  max-height: 820px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,15 +201,20 @@ body {
   width: 49%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2%;
 }
 .home .container .home-left .home-left-T {
+  height: 45%;
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
+.home .container .home-left .home-left-T .info {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .home .container .home-left .home-left-T .social-link {
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #fef3ef;
   display: flex;
   flex-direction: column;
@@ -221,6 +225,7 @@ body {
   font-size: 40px;
 }
 .home .container .home-left .home-left-B {
+  height: 53%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -284,10 +289,65 @@ body {
   max-height: 500px;
   margin-top: 20px;
   display: flex;
-  gap: 20px;
+  gap: 2%;
 }
 .traiteur .traiteur-right {
   width: 49%;
+  padding: 30px;
+  background-color: #fef3ef;
+}
+.traiteur .traiteur-right h3 {
+  color: #aa5246;
+  font-size: 20px;
+  font-weight: 500;
+}
+.traiteur .traiteur-right ul {
+  margin: 6% 0;
+  font-family: "Josefin";
+  font-weight: 350;
+  font-size: 16px;
+}
+.traiteur .traiteur-right ul li {
+  margin: 5px;
+  padding-left: 20px;
+  list-style: inside;
+}
+.traiteur .traiteur-right form {
+  max-width: 400px;
+}
+.traiteur .traiteur-right form label {
+  font-family: "Josefin";
+  font-weight: 500;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.traiteur .traiteur-right form label input {
+  color: #43413a;
+  height: 30px;
+  border: solid 2px;
+  border-color: rgba(169, 82, 70, 0.2156862745);
+  border-radius: 6px;
+}
+.traiteur .traiteur-right form label .half {
+  width: 200px;
+}
+.traiteur .traiteur-right form label textarea {
+  color: #43413a;
+  width: 400px;
+  border: solid 2px;
+  border-color: rgba(169, 82, 70, 0.2156862745);
+  border-radius: 6px;
+}
+.traiteur .traiteur-right form .form_button {
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  background-color: #fbdbcd;
+  color: #fff;
+  font-size: 20px;
 }
 
 .banner {
@@ -308,11 +368,11 @@ body {
 }
 
 .infos {
-  padding: 30px 50px 30px 30px;
+  padding: 20px 30px;
   background-color: #fef3ef;
 }
 .infos .info-titre {
-  padding-bottom: 20px;
+  padding-bottom: 5%;
 }
 .infos .info-titre h1 {
   color: #aa5246;
@@ -320,21 +380,23 @@ body {
   font-weight: 600;
 }
 .infos .info-titre p {
-  font-family: "Gotham";
-  font-weight: 100;
+  margin-top: 1%;
+  font-weight: 300;
   font-size: 16px;
 }
 .infos .info-container {
-  margin-top: 20px;
+  height: 70%;
+  margin-top: 2%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
 }
 .infos .info-container .info-item {
+  margin: 5px 0;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
+  gap: 5%;
 }
 .infos .info-container .info-item .fa-solid {
   text-align: center;

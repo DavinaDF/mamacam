@@ -2,6 +2,7 @@
   width: 100%;
   height: 50px;
   margin-top: 40px;
+  margin-bottom: 20px;
   position: relative;
   background-color: #aa5246;
   display: flex;
@@ -26,25 +27,33 @@
   .header-nav-left,
   .header-nav-right {
     width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-around;
     align-items: center;
+    align-content: center;
 
     .nav-inactive h2 {
+      height: 50px;
       font-family: "Gotham";
       color: #fff;
       font-size: 16px;
       font-weight: 300;
       text-align: center;
+      align-content: center;
     }
     .nav-active h2 {
       width: 100%;
-      height: 100%;
+      height: 50px;
       font-family: "Gotham";
+      font-size: 18px;
+      font-weight: 400;
       text-align: center;
+      align-content: center;
       color: #fff;
       background-color: rgb(255, 255, 255, 0.2);
+      background-clip: content-box;
     }
   }
   .header-nav-left {

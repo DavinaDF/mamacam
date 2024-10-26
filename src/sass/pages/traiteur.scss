@@ -1,26 +1,31 @@
 .traiteur {
   max-width: 1240px;
-  margin: 20px auto;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   gap: 2%;
 
   .traiteur-left {
     width: 49%;
-    object-fit: contain;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2%;
 
     .photo-container {
-      max-height: 500px;
+      height: 50%;
       margin-top: 20px;
       display: flex;
-      gap: 2%;
+      justify-content: space-between;
+      gap: 20px;
     }
   }
 
   .traiteur-right {
     width: 49%;
-    padding: 30px;
-    background-color: $color-container-light;
+    padding: 20px 30px;
+    background-color: #fef3ef;
 
     h3 {
       color: #aa5246;
