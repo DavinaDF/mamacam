@@ -1,5 +1,7 @@
 .infos {
-  padding: 20px 30px;
+  margin: 0;
+  max-height: 100%;
+  padding: 4%;
   object-fit: contain;
   background-color: $color-container-light;
 
@@ -17,16 +19,13 @@
   }
 
   .info-container {
-    max-height: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 0.8em;
 
     .info-item {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 5%;
+      display: grid;
+      grid-template-columns: 1fr 5fr;
 
       .fa-solid {
         text-align: center;
@@ -35,8 +34,10 @@
         font-size: 30px;
       }
       p {
+        margin: 0;
         font-size: 16px;
         font-weight: 400;
+        align-content: center;
       }
     }
   }

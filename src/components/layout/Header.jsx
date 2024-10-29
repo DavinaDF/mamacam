@@ -18,10 +18,10 @@ const Header = () => {
           <h2>Traiteur</h2>
         </NavLink>
         <NavLink
-          to="/partenaires"
+          to="/evenements"
           className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
         >
-          <h2>Partenaires</h2>
+          <h2>Evènements</h2>
         </NavLink>
       </div>
       <div className="header-logo">
@@ -29,16 +29,16 @@ const Header = () => {
       </div>
       <div className="header-nav-right">
         <NavLink
-          to="/evenements"
-          className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-        >
-          <h2>Evènements</h2>
-        </NavLink>
-        <NavLink
           to="/about"
           className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
         >
-          <h2>A propos</h2>
+          <h2>Valeurs</h2>
+        </NavLink>
+        <NavLink
+          to="/partenaires"
+          className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
+        >
+          <h2>Partenaires</h2>
         </NavLink>
         <NavLink
           to="/contact"

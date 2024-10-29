@@ -1,0 +1,68 @@
+.partenaires {
+  max-width: 1024px;
+  min-height: 780px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2%;
+
+  h2 {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 24px;
+    color: $color-title;
+  }
+
+  .left-side {
+    width: 54%;
+    height: 100%;
+    .infos {
+      height: 100%;
+      padding: 40px;
+      h1 {
+        font-family: "Gotham";
+        font-weight: 600;
+        font-size: 24px;
+        color: $color-title;
+        margin-bottom: 30px;
+      }
+      .info-container {
+        gap: 3em;
+      }
+      .info-item {
+        gap: 1em;
+        align-items: center;
+      }
+    }
+
+    i {
+      text-align: center;
+      align-content: center;
+      font-size: 40px !important;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .right-side {
+    width: 44%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    .photo-container {
+      height: 50%;
+      display: flex;
+      gap: 20px;
+    }
+
+    .bloc {
+      padding: 30px;
+      background-color: #fef3ef;
+    }
+  }
+}

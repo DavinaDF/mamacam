@@ -1,18 +1,22 @@
 [
-    {
-        "icon":"fa-solid fa-clock",
-        "text":"Du lundi au vendredi : 12h00 - 14h30"
-    },
-    {
-        "icon":"fa-solid fa-location-dot",
-        "text":"83 cours Victor Hugo 33000 Bordeaux"
-    },
-    {
-        "icon":"fa-solid fa-calendar-days",
-        "text":"Réservations et informations par téléphone de 9h30 à 11h30 et de 14h30 à 17h30 : 09.87.03.83.97"
-    },
-    {
-        "icon":"fa-solid fa-utensils",
-        "text":"Devis traiteur pour événement professionnel ou personnel sur demande"
-    }
+  {
+    "icon": "fa-solid fa-clock",
+    "text": "Du lundi au vendredi : 12h00 - 14h30"
+  },
+  {
+    "icon": "fa-solid fa-location-dot",
+    "text": "83 cours Victor Hugo 33000 Bordeaux"
+  },
+  {
+    "icon": "fa-solid fa-calendar-days",
+    "text": "Réservations et informations par téléphone au 09.87.03.83.97"
+  },
+  {
+    "icon": "fa-solid fa-euro",
+    "text": "Moyens de paiement acceptés : espèces, CB, Gemme, cartes titre restaurant"
+  },
+  {
+    "icon": "fa-solid fa-utensils",
+    "text": "Devis traiteur pour événement professionnel ou personnel sur demande"
+  }
 ]
