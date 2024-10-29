@@ -34,7 +34,7 @@ const Traiteur = () => {
           Merci de donner un maximum de précisions dans le message :
           <li>Nombre de personnes prévues</li>
           <li>Budget</li>
-          <li>Type de prestation : buffet ou assiette</li>
+          <li>Type de prestation : buffet ou à l’assiette</li>
           <li>Allergies</li>
           <li>Toute autre information utile</li>
         </ul>

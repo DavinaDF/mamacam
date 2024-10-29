@@ -1,0 +1,88 @@
+.contact {
+  max-width: 1240px;
+  height: 760px;
+  margin: auto;
+  display: flex;
+  gap: 3%;
+
+  h2 {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-size: 22px;
+    color: $color-title;
+  }
+  .left-side {
+    width: 46%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    .bloc {
+      padding: 30px;
+      background-color: #fef3ef;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .right-side {
+    width: 48%;
+    padding: 40px;
+    background-color: #fef3ef;
+
+    ul {
+      margin: 6% 0;
+      font-family: "Josefin";
+      font-weight: 350;
+      font-size: 16px;
+
+      li {
+        margin: 5px;
+        padding-left: 20px;
+        list-style: inside;
+      }
+    }
+    form {
+      max-width: 400px;
+
+      label {
+        font-family: "Josefin";
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        input {
+          color: $color-text;
+          height: 30px;
+          border: solid 2px;
+          border-color: #a9524637;
+          border-radius: 6px;
+        }
+        textarea {
+          color: $color-text;
+          width: 400px;
+          border: solid 2px;
+          border-color: #a9524637;
+          border-radius: 6px;
+        }
+      }
+      .form_button {
+        width: 200px;
+        height: 50px;
+        border-radius: 15px;
+        border: none;
+        background-color: $color-container-darker;
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
