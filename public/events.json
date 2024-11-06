@@ -1,0 +1,47 @@
+[
+  {
+    "image": "/images/events/tartinade.jpg",
+    "tag": "Produits",
+    "title": "Vente éphémères",
+    "date": "A partir de novembre",
+    "description": "Pour agrémenter vos repas de fin d'année, je vous propose la fameuse tartinade de mauvaise fois ainsi qu'un assortiment de biscuits",
+    "price": "A partir de --€",
+    "moment": "container left current"
+  },
+  {
+    "image": "/images/events/expo-couleurs.jpg",
+    "tag": "VERNISSAGE",
+    "title": "Le goût des couleurs",
+    "date": "20.06.2024 de 18h à 21h",
+    "description": "Vernisasage de l'exposition Le goût des couleurs, avec tapas et boissons à pris tout doux",
+    "price": "Entrée gratuite",
+    "moment": "container right over"
+  },
+  {
+    "image": "/images/events/event-brunch.jpg",
+    "tag": "BRUNCH",
+    "title": "Brunch Mamacam x La Freegaleuse",
+    "date": "11 et 12 02.2024 à partir de 11h30",
+    "description": "Brunch végétal, bio et fait maison, en deux services, uniquement sur réservation",
+    "price": "27€",
+    "moment": "container left over"
+  },
+  {
+    "image": "/images/events/expo-beaux-jours.jpg",
+    "tag": "VERNISSAGE",
+    "title": "Les beaux jours",
+    "date": "01.06.2023 de 19h à 21h",
+    "description": "Exposition d'illustration débutant lors de ce vernissage, accompagné de tapas et boissons",
+    "price": "Entrée gratuite",
+    "moment": "container right over"
+  },
+  {
+    "image": "/images/events/event-mets-the.jpg",
+    "tag": "DÎNER",
+    "title": "Accords mets et thés",
+    "date": "30.04.2022 à 20h30",
+    "description": "En collaboration avec Un Air de Thé, vous découvrirez de belles associations entre les plats et les thés",
+    "price": "45€",
+    "moment": "container left over"
+  }
+]

@@ -1,0 +1,145 @@
+#container {
+  img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .content {
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: space-between;
+    .tag {
+      height: 30px;
+      width: 120px;
+      border-radius: 5px;
+      background-color: #00463c;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+      align-content: center;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .date {
+      font-family: "Josefin";
+      font-size: 12px;
+      font-weight: 300;
+    }
+    p,
+    strong {
+      margin: 0;
+      font-family: "Josefin";
+      font-size: 14px;
+    }
+    .description {
+      font-weight: 500;
+    }
+    .price {
+      font-weight: 800;
+    }
+  }
+}
+
+.over {
+  opacity: 0.4;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+
+  .container {
+    position: relative;
+    margin-top: -40px;
+    border: 3px solid #00463c;
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .container.left {
+    margin: 0 -40px;
+    right: 0;
+  }
+
+  .container.right {
+    margin: 0 40px;
+    left: calc(50% + 12px);
+  }
+
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    top: calc(50% - 15px);
+    right: -42px;
+    background: #ffffff;
+    opacity: 1 !important;
+    border: 2px solid #00463c;
+    border-radius: 16px;
+    z-index: 1;
+  }
+
+  .container.right::after {
+    left: -73px;
+  }
+  .container.left::after {
+    right: -82px;
+  }
+  .container.left::before {
+    right: -50px;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: -12px;
+    background: #00463c;
+    z-index: 1;
+  }
+
+  .container.right::before {
+    left: -50px;
+  }
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  width: 12px;
+  background: rgb(0, 70, 60);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 70, 60, 1) 0%,
+    rgba(0, 70, 60, 0.19931722689075626) 40%
+  );
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 6px);
+  margin-left: -1px;
+}
+
+.container::after {
+  background: #ffffff !important;
+  border: 2px solid #00463c;
+  border-radius: 16px;
+  z-index: 1;
+}
