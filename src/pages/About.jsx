@@ -1,6 +1,6 @@
 import photoInterieur from "../assets/images/interieur.png";
 import photoMuffin from "../assets/images/muffin.png";
-import photoTartinade from "../assets/images/tartinade.png";
+import photoCookie from "../assets/images/dessert-cookies.jpg";
 
 const About = () => {
   return (
@@ -41,10 +41,7 @@ const About = () => {
             src={photoMuffin}
             alt="Photo d'un joli muffin dans une assiette"
           />
-          <img
-            src={photoTartinade}
-            alt="Photo d'un bocal de tartinade maison"
-          />
+          <img src={photoCookie} alt="Photo d'un bocal de tartinade maison" />
         </div>
       </div>
       <div className="right-side">

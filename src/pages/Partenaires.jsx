@@ -1,7 +1,7 @@
 import Info from "../components/Info";
 import partenaireInfo from "../data/partenaireInfo.json";
 import photoThe from "../assets/images/thes.png";
-import photoKombucha from "../assets/images/kombucha.png";
+import photoKombucha from "../assets/images/kombucha.jpeg";
 
 const Partenaires = () => {
   return (
@@ -12,15 +12,13 @@ const Partenaires = () => {
           subtitle={""}
           items={partenaireInfo}
         />
+        <img
+          src={photoKombucha}
+          alt="Photo de plusieurs bouteilles de Kombucha"
+        />
       </div>
       <div className="right-side">
-        <div className="photo-container">
-          <img
-            src={photoKombucha}
-            alt="Photo de plusieurs bouteilles de Kombucha"
-          />
-          <img src={photoThe} alt="Photo d'une tasse de thé" />
-        </div>
+        <img src={photoThe} alt="Photo d'une tasse de thé" />
         <div className="bloc">
           <h2>Monnaie Locale</h2>
           <p>

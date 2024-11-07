@@ -1,10 +1,10 @@
 .about {
-  max-width: 1024px;
+  max-width: 1240px;
   max-height: 780px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  gap: 1em;
+  gap: 20px;
 
   .bloc {
     padding: 20px 30px;
@@ -18,7 +18,7 @@
     }
     p {
       font-size: 16px;
-      font-weight: 400;
+      font-weight: 300;
     }
   }
 
@@ -27,11 +27,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
+    gap: 20px;
 
     .photo-container {
       display: flex;
       justify-content: space-between;
+      gap: 20px;
 
       img {
         width: 100%;
@@ -44,11 +45,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
+    gap: 20px;
 
     img {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 }
