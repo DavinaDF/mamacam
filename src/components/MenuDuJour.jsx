@@ -1,9 +1,11 @@
-import menu from "../assets/images/menu.webp";
-
 const MenuDuJour = () => {
   return (
     <div className="menu-container">
-      <img src={menu} alt="Image contenant le menu du jour" />
+      {/* <iframe
+        loading="lazy"
+        src="https://www.canva.com/design/DAEeBArgL-Q/XVpKwnYmuCIFqxULuvDQAA/view?embed"
+        allowFullScreen
+      ></iframe> */}
     </div>
   );
 };

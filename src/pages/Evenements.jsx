@@ -1,5 +1,5 @@
 import Event from "../components/Event";
-import eventData from "../../public/events.json";
+import eventData from "../data/events.json";
 
 const Evenements = () => {
   return (
