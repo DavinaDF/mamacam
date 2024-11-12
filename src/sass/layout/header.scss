@@ -3,61 +3,64 @@
   height: 50px;
   margin-top: 40px;
   margin-bottom: 20px;
-  position: relative;
   background-color: #aa5246;
-  display: grid;
-  grid-template-columns: 3fr 1fr 3fr;
-  justify-items: center;
 
-  .header-logo {
-    // position: absolute;
-    margin: auto;
-    max-width: 100px;
-
-    img {
-      margin-top: -40px;
-      width: 80px;
-      box-sizing: border-box;
-      background-color: #fbdbcd;
-      border-radius: 50%;
-      border: 10px solid #fff;
-    }
-  }
-
-  .header-nav-left,
-  .header-nav-right {
+  .header-container {
     width: 100%;
-    height: 100%;
+    max-width: 1440px;
+    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 3fr 0.5fr 3fr;
+    justify-items: center;
 
-    .nav-inactive h2 {
-      width: 100%;
-      height: 50px;
-      font-family: "Gotham";
-      color: #fff;
-      font-size: 16px;
-      font-weight: 300;
-      text-align: center;
-      align-content: center;
+    .header-logo {
+      // position: absolute;
+      margin: auto;
+      max-width: 100px;
+
+      img {
+        margin-top: -40px;
+        width: 80px;
+        box-sizing: border-box;
+        background-color: #fbdbcd;
+        border-radius: 50%;
+        border: 10px solid #fff;
+      }
     }
-    .nav-active h2 {
+
+    .header-nav-left,
+    .header-nav-right {
       width: 100%;
-      height: 50px;
-      font-family: "Gotham";
-      font-size: 16px;
-      font-weight: 400;
-      text-align: center;
-      align-content: center;
-      color: #fff;
-      background-color: rgb(255, 255, 255, 0.2);
-      // background-clip: content-box;
+      height: 100%;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      justify-content: space-around;
+
+      h2 {
+        width: 100%;
+        height: 50px;
+        font-family: "Gotham";
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        align-content: center;
+        color: #fff;
+      }
+
+      a {
+        width: 100%;
+      }
+      .nav-active h2 {
+        background-color: rgb(255, 255, 255, 0.2);
+        // background-clip: content-box;
+      }
     }
-  }
-  .header-nav-left {
-    margin-left: 1em;
-  }
-  .header-nav-right {
-    margin-right: 1em;
+    .header-nav-left {
+      margin-left: 10%;
+    }
+    .header-nav-right {
+      margin-right: 10%;
+    }
   }
 }
