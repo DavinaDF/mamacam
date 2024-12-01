@@ -5,6 +5,13 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header-container">
+        <div className="nav-mobile">
+          <div className="logo">
+            <img src={logo} alt="logo Mamacam haut de page" />
+          </div>
+          <i className="fa-solid fa-bars menu-button"></i>
+          <div className="menu-links"></div>
+        </div>
         <div className="header-nav-left">
           <NavLink
             to="/"

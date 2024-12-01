@@ -6,7 +6,7 @@ const Modal = ({ modalContent, isOpen, onClose }) => {
     <div className="modal-background" onClick={onClose}>
       <div className="modal-container">
         <i className="fa-solid fa-circle-xmark" onClick={onClose}></i>
-        <img src={modalContent} alt={modalContent.alt} />
+        <img src={modalContent} alt="Fenêtre pour découvrir les détails" />
       </div>
     </div>
   );

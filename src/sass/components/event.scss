@@ -49,9 +49,9 @@
   }
 }
 
-.over {
-  opacity: 0.4;
-}
+// .over::before {
+//   opacity: 0.4;
+// }
 
 .timeline {
   position: relative;
@@ -129,7 +129,7 @@
   background: linear-gradient(
     180deg,
     rgba(0, 70, 60, 1) 0%,
-    rgba(0, 70, 60, 0.19931722689075626) 40%
+    rgba(0, 70, 60, 0.5) 40%
   );
   top: 0;
   bottom: 0;
@@ -142,4 +142,11 @@
   border: 2px solid #00463c;
   border-radius: 16px;
   z-index: 1;
+}
+
+.over {
+  .content,
+  .photo {
+    opacity: 0.5;
+  }
 }

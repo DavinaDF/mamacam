@@ -1,12 +1,14 @@
 .banner {
-  margin: auto;
-  margin-top: 20px;
+  padding: 5px 0;
   width: 100%;
-  padding: 10px 30px;
+  max-width: 1240px;
   background-color: rgb(204, 218, 216);
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.banner p {
+  margin: 0;
 }
 .banner h2 {
   font-family: "Gotham";

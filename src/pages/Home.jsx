@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Modal from "../components/Modal";
 import Banner from "../components/Banner";
 import Info from "../components/Info";
@@ -12,13 +13,16 @@ import imagePlat2 from "../assets/images/photo_plat_2.jpg";
 
 const Home = () => {
   const [isVisible, setVisibleModal] = useState(false);
+  const [srcModal, setSource] = useState();
 
   const closeModal = () => {
     setVisibleModal(false);
+    setSource(null);
   };
 
-  const handleDisplayModal = () => {
+  const handleDisplayModal = (srcImageModal) => {
     setVisibleModal(true);
+    setSource(srcImageModal);
   };
 
   return (
@@ -33,10 +37,29 @@ const Home = () => {
               items={homeInfo}
             />
             <div className="social-link">
-              <i className="fa-brands fa-instagram"></i>
-              <i className="fa-brands fa-facebook"></i>
-              <i className="fa-solid fa-envelope"></i>
-              <i className="fa-solid fa-phone"></i>
+              <a
+                href="https://www.instagram.com/mamacam_cantine/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100066390621228"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+              <NavLink
+                to="/contact"
+                className={(nav) =>
+                  nav.isActive ? "nav-active" : "nav-inactive"
+                }
+              >
+                <i className="fa-solid fa-envelope"></i>
+              </NavLink>
+              <i className="fa-solid fa-map"></i>
             </div>
           </div>
           <div className="home-left-B">
@@ -51,12 +74,25 @@ const Home = () => {
             <MenuJour />
           </div>
           <div className="home-right-R">
-            <img src={formules} alt="image contenant les formules proposées" />
+            <img
+              src={formules}
+              alt="image contenant les formules proposées"
+              className="img-formules"
+            />
+            <button
+              className="formules-button"
+              onClick={(e) => {
+                e.preventDefault();
+                handleDisplayModal(formules);
+              }}
+            >
+              FORMULES
+            </button>
             <button
               className="bouton_boissons"
               onClick={(e) => {
                 e.preventDefault();
-                handleDisplayModal();
+                handleDisplayModal(boissons);
               }}
             >
               BOISSONS
@@ -70,7 +106,7 @@ const Home = () => {
       </div>
       {isVisible && (
         <Modal
-          modalContent={boissons}
+          modalContent={srcModal}
           isOpen={isVisible}
           onClose={closeModal}
         />

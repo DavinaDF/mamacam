@@ -1,17 +1,20 @@
 .header {
   width: 100%;
   height: 50px;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 20px;
   background-color: #aa5246;
 
   .header-container {
-    width: 100%;
-    max-width: 1440px;
+    width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 3fr 0.5fr 3fr;
+    grid-template-columns: 3fr 1fr 3fr;
     justify-items: center;
+
+    .nav-mobile {
+      display: none;
+    }
 
     .header-logo {
       // position: absolute;
@@ -24,7 +27,7 @@
         box-sizing: border-box;
         background-color: #fbdbcd;
         border-radius: 50%;
-        border: 10px solid #fff;
+        border: 8px solid #fff;
       }
     }
 
@@ -56,11 +59,15 @@
         // background-clip: content-box;
       }
     }
-    .header-nav-left {
-      margin-left: 10%;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .header-container {
+      width: 100%;
     }
-    .header-nav-right {
-      margin-right: 10%;
-    }
+  }
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 768px) {
   }
 }
