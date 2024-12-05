@@ -1,3 +1,5 @@
+@use "../variables";
+
 .contact {
   max-width: 1240px;
   height: 760px;
@@ -9,7 +11,7 @@
     font-family: "Gotham";
     font-weight: 600;
     font-size: 22px;
-    color: $color-title;
+    color: variables.$color-title;
   }
   .left-side {
     width: 46%;
@@ -60,14 +62,14 @@
         gap: 5px;
 
         input {
-          color: $color-text;
+          color: variables.$color-text;
           height: 30px;
           border: solid 2px;
           border-color: #a9524637;
           border-radius: 6px;
         }
         textarea {
-          color: $color-text;
+          color: variables.$color-text;
           width: 400px;
           border: solid 2px;
           border-color: #a9524637;
@@ -79,7 +81,7 @@
         height: 50px;
         border-radius: 15px;
         border: none;
-        background-color: $color-container-darker;
+        background-color: variables.$color-container-darker;
         color: #fff;
         font-size: 20px;
       }

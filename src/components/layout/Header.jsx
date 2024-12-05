@@ -10,50 +10,83 @@ const Header = () => {
             <img src={logo} alt="logo Mamacam haut de page" />
           </div>
           <i className="fa-solid fa-bars menu-button"></i>
-          <div className="menu-links"></div>
+          <div className="menu-links close">
+            <NavLink to="/" className="nav-mobile-item">
+              <h2>Menu</h2>
+            </NavLink>
+            <NavLink to="/traiteur" className="nav-mobile-item">
+              <h2>Traiteur</h2>
+            </NavLink>
+            <NavLink to="/evenements" className="nav-mobile-item">
+              <h2>Evènements</h2>
+            </NavLink>
+            <NavLink to="/about" className="nav-mobile-item">
+              <h2>Valeurs</h2>
+            </NavLink>
+            <NavLink to="/partenaires" className="nav-mobile-item">
+              <h2>Partenaires</h2>
+            </NavLink>
+            <NavLink to="/contact" className="nav-mobile-item">
+              <h2>Contact</h2>
+            </NavLink>
+          </div>
         </div>
-        <div className="header-nav-left">
-          <NavLink
-            to="/"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Menu</h2>
-          </NavLink>
-          <NavLink
-            to="/traiteur"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Traiteur</h2>
-          </NavLink>
-          <NavLink
-            to="/evenements"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Evènements</h2>
-          </NavLink>
-        </div>
-        <div className="header-logo">
-          <img src={logo} alt="logo Mamacam haut de page" />
-        </div>
-        <div className="header-nav-right">
-          <NavLink
-            to="/about"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Valeurs</h2>
-          </NavLink>
-          <NavLink
-            to="/partenaires"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Partenaires</h2>
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}
-          >
-            <h2>Contact</h2>
-          </NavLink>
+        <div className="nav-desktop">
+          <div className="header-nav-left">
+            <NavLink
+              to="/"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Menu</h2>
+            </NavLink>
+            <NavLink
+              to="/traiteur"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Traiteur</h2>
+            </NavLink>
+            <NavLink
+              to="/evenements"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Evènements</h2>
+            </NavLink>
+          </div>
+          <div className="header-logo">
+            <img src={logo} alt="logo Mamacam haut de page" />
+          </div>
+          <div className="header-nav-right">
+            <NavLink
+              to="/about"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Valeurs</h2>
+            </NavLink>
+            <NavLink
+              to="/partenaires"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Partenaires</h2>
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={(nav) =>
+                nav.isActive ? "nav-active" : "nav-inactive"
+              }
+            >
+              <h2>Contact</h2>
+            </NavLink>
+          </div>
         </div>
       </div>
     </div>

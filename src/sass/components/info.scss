@@ -1,9 +1,11 @@
+@use "../variables";
+
 .infos {
   margin: 0;
   max-height: 100%;
   padding: 4%;
   object-fit: contain;
-  background-color: $color-container-light;
+  background-color: variables.$color-container-light;
 
   .info-titre {
     h1 {

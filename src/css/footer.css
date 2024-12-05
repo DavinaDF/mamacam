@@ -1,0 +1,28 @@
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #a95146;
+}
+.footer .footer-container {
+  margin: auto;
+  padding: 15px 20px;
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer-container .footer-left {
+  display: flex;
+  gap: 30px;
+}
+.footer .footer-container .footer-left h4 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.footer .footer-container .footer-right {
+  font-family: "Josefin";
+  color: #fff;
+  font-weight: 100;
+  font-size: 13px;
+}/*# sourceMappingURL=footer.css.map */

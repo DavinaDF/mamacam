@@ -61,16 +61,6 @@
     url("../assets/fonts/JosefinSans-VariableFont_wght.ttf") format("truetype");
 }
 
-$color-title: #a95146;
-$color-text: #43413a;
-$color-container-light: #fef3ef;
-$color-container-darker: #fbdbcd;
-$color-contrast: #00463c;
-
-// * {
-//   margin: 0;
-// }
-
 body {
   margin: 0;
   width: 100%;
@@ -123,7 +113,7 @@ a {
 
 p {
   font-family: "Josefin";
-  color: $color-text;
+  color: #43413a;
 }
 canvas {
   background-color: transparent;

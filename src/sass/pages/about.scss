@@ -1,3 +1,5 @@
+@use "../variables";
+
 .about {
   max-width: 1240px;
   max-height: 780px;
@@ -14,7 +16,7 @@
       font-family: "Gotham";
       font-weight: 600;
       font-size: 22px;
-      color: $color-title;
+      color: variables.$color-title;
     }
     p {
       font-size: 16px;

@@ -1,7 +1,9 @@
+@use "../variables.scss";
+
 .home {
   max-width: 1240px;
   width: 100%;
-  height: 80vh;
+  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -43,14 +45,14 @@
 
         .social-link {
           padding: 10px 20px;
-          background-color: $color-container-light;
+          background-color: variables.$color-container-light;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
 
           i {
             cursor: pointer;
-            color: $color-contrast;
+            color: variables.$color-contrast;
             font-size: 40px;
           }
         }
@@ -65,7 +67,6 @@
 
     .home-right {
       width: 52%;
-      height: 100%;
       max-height: 700px;
       object-fit: contain;
       display: flex;
@@ -79,6 +80,11 @@
         object-fit: fill;
         display: flex;
 
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
         .menu-container {
           width: 100%;
           height: 100%; // Make sure it fills its parent
@@ -95,7 +101,7 @@
             width: 100%;
             height: 100%;
             min-height: 100%;
-            object-fit: fill; // This ensures it covers the entire area
+            object-fit: cover; // This ensures it covers the entire area
             border: none;
             overflow: visible;
           }
@@ -106,10 +112,8 @@
         width: 32%;
         height: 100%;
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
         justify-content: space-between;
-        align-content: stretch;
         gap: 10px;
 
         .formules-button {
@@ -120,6 +124,7 @@
           width: 100%;
         }
         button {
+          border-style: none;
           cursor: pointer;
           height: 50px;
           background-color: #d09b95;
@@ -167,7 +172,7 @@
     i {
       cursor: pointer;
       font-size: 40px;
-      color: $color-contrast;
+      color: variables.$color-contrast;
       position: absolute;
       top: 10px;
       right: 10px;
@@ -184,31 +189,53 @@
     padding: 0 20px;
   }
   @media screen and (max-width: 1023px) {
+    height: 140vh;
     max-width: 100%;
     padding: 0 20px;
     margin: auto;
 
     .container {
-      flex-direction: column-reverse;
+      max-height: none;
+      flex-direction: column;
 
       .home-left {
+        order: 2;
         width: 100%;
         max-height: none;
+        flex-direction: row;
+
+        .home-left-T {
+          height: 100%;
+
+          .social-link {
+            display: none;
+          }
+        }
+        .home-left-B {
+          height: 100%;
+          width: 40%;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 100%;
+          }
+        }
       }
       .home-right {
+        order: 1;
         width: 100%;
         height: 100%;
         max-height: none;
         flex-direction: row;
-        justify-content: space-around;
-        gap: 20px;
+        justify-content: space-between;
 
         .home-right-L {
           width: 56%;
           max-height: none;
         }
         .home-right-R {
-          width: 36%;
+          width: 40%;
           max-height: none;
           display: flex;
           flex-direction: column;
@@ -259,11 +286,19 @@
   }
   @media screen and (max-width: 767px) {
     padding: 0 15px;
+    .banner {
+      margin: 0;
+      width: 100%;
+      max-width: fit-content;
+    }
     .container {
-      .home-right-R .photo_container {
-        flex-direction: column;
-        img {
-          width: 100%;
+      .home-right {
+        justify-content: flex-start;
+        .photo_container {
+          flex-direction: column;
+          img {
+            width: 100%;
+          }
         }
       }
       .home-left-T {

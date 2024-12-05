@@ -104,4 +104,8 @@ a {
 p {
   font-family: "Josefin";
   color: #43413a;
+}
+
+canvas {
+  background-color: transparent;
 }/*# sourceMappingURL=reset.css.map */

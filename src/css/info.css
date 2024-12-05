@@ -1,36 +1,39 @@
 .infos {
-  padding: 30px 80px 40px 40px;
-  background-color: #FBDBCD;
-}
-.infos .info-titre {
-  padding-bottom: 20px;
+  margin: 0;
+  max-height: 100%;
+  padding: 4%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: #fef3ef;
 }
 .infos .info-titre h1 {
-  color: #AA5246;
-  font-size: 28px;
+  color: #aa5246;
+  font-size: 26px;
   font-weight: 600;
 }
 .infos .info-titre p {
-  font-weight: 700;
+  margin-top: 1%;
+  font-weight: 300;
+  font-size: 16px;
 }
 .infos .info-container {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 0.8em;
 }
 .infos .info-container .info-item {
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 .infos .info-container .info-item .fa-solid {
   text-align: center;
   align-content: center;
-  color: #AA5246;
+  color: #aa5246;
   font-size: 30px;
 }
 .infos .info-container .info-item p {
+  margin: 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
+  align-content: center;
 }/*# sourceMappingURL=info.css.map */

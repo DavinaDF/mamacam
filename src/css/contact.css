@@ -1,57 +1,55 @@
-.traiteur {
+.contact {
   max-width: 1240px;
+  height: 760px;
   margin: auto;
-  padding: 0 20px;
   display: flex;
-  justify-content: space-around;
-  gap: 2%;
+  gap: 3%;
 }
-.traiteur .traiteur-left {
-  width: 49%;
+.contact h2 {
+  font-family: "Gotham";
+  font-weight: 600;
+  font-size: 22px;
+  color: #a95146;
+}
+.contact .left-side {
+  width: 46%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2%;
-}
-.traiteur .traiteur-left .info h1 {
-  margin-bottom: 30px;
-}
-.traiteur .traiteur-left .info .info-container {
-  gap: 2em;
-}
-.traiteur .traiteur-left .photo-container {
-  height: 50%;
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
   gap: 20px;
 }
-.traiteur .traiteur-right {
-  width: 49%;
-  padding: 20px 30px;
+.contact .left-side .bloc {
+  padding: 30px;
   background-color: #fef3ef;
 }
-.traiteur .traiteur-right h3 {
-  color: #aa5246;
-  font-size: 20px;
-  font-weight: 500;
+.contact .left-side .bloc p {
+  font-size: 16px;
+  font-weight: 400;
 }
-.traiteur .traiteur-right ul {
+.contact .left-side img {
+  width: 100%;
+}
+.contact .right-side {
+  width: 48%;
+  padding: 40px;
+  background-color: #fef3ef;
+}
+.contact .right-side ul {
   margin: 6% 0;
   font-family: "Josefin";
   font-weight: 350;
   font-size: 16px;
 }
-.traiteur .traiteur-right ul li {
+.contact .right-side ul li {
   margin: 5px;
   padding-left: 20px;
   list-style: inside;
 }
-.traiteur .traiteur-right form {
+.contact .right-side form {
   max-width: 400px;
 }
-.traiteur .traiteur-right form label {
+.contact .right-side form label {
   font-family: "Josefin";
   font-weight: 500;
   margin-bottom: 20px;
@@ -59,24 +57,21 @@
   flex-direction: column;
   gap: 5px;
 }
-.traiteur .traiteur-right form label input {
+.contact .right-side form label input {
   color: #43413a;
   height: 30px;
   border: solid 2px;
   border-color: rgba(169, 82, 70, 0.2156862745);
   border-radius: 6px;
 }
-.traiteur .traiteur-right form label .half {
-  width: 200px;
-}
-.traiteur .traiteur-right form label textarea {
+.contact .right-side form label textarea {
   color: #43413a;
   width: 400px;
   border: solid 2px;
   border-color: rgba(169, 82, 70, 0.2156862745);
   border-radius: 6px;
 }
-.traiteur .traiteur-right form .form_button {
+.contact .right-side form .form_button {
   width: 200px;
   height: 50px;
   border-radius: 15px;
@@ -86,7 +81,7 @@
   font-size: 20px;
 }
 @media screen and (max-width: 1280px) {
-  .traiteur {
+  .contact {
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -94,9 +89,9 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .traiteur {
+  .contact {
     max-width: 100%;
     padding: 0 20px;
     margin: auto;
   }
-}/*# sourceMappingURL=traiteur.css.map */
+}/*# sourceMappingURL=contact.css.map */

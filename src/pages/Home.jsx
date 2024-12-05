@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 import Modal from "../components/Modal";
 import Banner from "../components/Banner";
 import Info from "../components/Info";
-import MenuJour from "../components/MenuDuJour";
+// import MenuJour from "../components/MenuDuJour";
 import homeInfo from "../data/homeInfo.json";
 import photoDevanture from "../assets/images/devanture_ouverte.jpg";
+import menuJour from "../assets/images/menu.jpg";
 import formules from "../assets/images/prix_formules.jpg";
 import boissons from "../../src/assets/images/boissons_details.webp";
 import imagePlat1 from "../assets/images/photo_plat_1.jpg";
@@ -71,7 +72,8 @@ const Home = () => {
         </div>
         <div className="home-right">
           <div className="home-right-L">
-            <MenuJour />
+            {/* <MenuJour /> */}
+            <img src={menuJour} alt="Menu du jour du restaurant Mamacam" />
           </div>
           <div className="home-right-R">
             <img
