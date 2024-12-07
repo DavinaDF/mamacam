@@ -47,6 +47,10 @@
   font-weight: 800;
 }
 
+.over {
+  opacity: 0.4;
+}
+
 .timeline {
   position: relative;
   width: 100%;
@@ -114,7 +118,7 @@
   border-radius: 5px;
   width: 12px;
   background: rgb(0, 70, 60);
-  background: linear-gradient(180deg, rgb(0, 70, 60) 0%, rgba(0, 70, 60, 0.5) 40%);
+  background: linear-gradient(180deg, rgb(0, 70, 60) 0%, rgba(0, 70, 60, 0.1993172269) 40%);
   top: 0;
   bottom: 0;
   left: calc(50% - 6px);
@@ -126,9 +130,4 @@
   border: 2px solid #00463c;
   border-radius: 16px;
   z-index: 1;
-}
-
-.over .content,
-.over .photo {
-  opacity: 0.5;
 }/*# sourceMappingURL=event.css.map */

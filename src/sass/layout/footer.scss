@@ -1,13 +1,11 @@
-@use "../variables";
-
 .footer {
   margin-top: 20px;
+  padding: 15px 0;
   width: 100%;
-  background-color: variables.$color-title;
+  background-color: $color-title;
 
   .footer-container {
     margin: auto;
-    padding: 15px 20px;
     max-width: 1240px;
     display: flex;
     justify-content: space-between;

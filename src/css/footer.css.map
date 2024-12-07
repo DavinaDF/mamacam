@@ -1,1 +1,0 @@
-{"version":3,"sources":["../sass/layout/footer.scss","../sass/variables.scss","footer.css"],"names":[],"mappings":"AAEA;EACE,gBAAA;EACA,WAAA;EACA,yBCLY;ACId;AFGE;EACE,YAAA;EACA,kBAAA;EACA,iBAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AEDJ;AFGI;EACE,aAAA;EACA,SAAA;AEDN;AFGM;EACE,WAAA;EACA,eAAA;EACA,gBAAA;AEDR;AFII;EACE,sBAAA;EACA,WAAA;EACA,gBAAA;EACA,eAAA;AEFN","file":"footer.css"}

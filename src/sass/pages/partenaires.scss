@@ -1,11 +1,8 @@
-@use "../variables";
-
 .partenaires {
   max-width: 1240px;
   max-height: 780px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2%;
@@ -14,7 +11,7 @@
     font-family: "Gotham";
     font-weight: 600;
     font-size: 24px;
-    color: variables.$color-title;
+    color: $color-title;
   }
 
   .left-side {
@@ -31,7 +28,7 @@
         font-family: "Gotham";
         font-weight: 600;
         font-size: 24px;
-        color: variables.$color-title;
+        color: $color-title;
         margin-bottom: 30px;
       }
       .info-container {

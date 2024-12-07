@@ -1,102 +1,21 @@
 .traiteur {
   max-width: 1240px;
-  margin: auto;
-  padding: 0 20px;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
   gap: 2%;
 }
 .traiteur .traiteur-left {
   width: 49%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2%;
-}
-.traiteur .traiteur-left .info h1 {
-  margin-bottom: 30px;
-}
-.traiteur .traiteur-left .info .info-container {
-  gap: 2em;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .traiteur .traiteur-left .photo-container {
-  height: 50%;
+  max-height: 500px;
   margin-top: 20px;
   display: flex;
-  justify-content: space-between;
   gap: 20px;
 }
 .traiteur .traiteur-right {
   width: 49%;
-  padding: 20px 30px;
-  background-color: #fef3ef;
-}
-.traiteur .traiteur-right h3 {
-  color: #aa5246;
-  font-size: 20px;
-  font-weight: 500;
-}
-.traiteur .traiteur-right ul {
-  margin: 6% 0;
-  font-family: "Josefin";
-  font-weight: 350;
-  font-size: 16px;
-}
-.traiteur .traiteur-right ul li {
-  margin: 5px;
-  padding-left: 20px;
-  list-style: inside;
-}
-.traiteur .traiteur-right form {
-  max-width: 400px;
-}
-.traiteur .traiteur-right form label {
-  font-family: "Josefin";
-  font-weight: 500;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.traiteur .traiteur-right form label input {
-  color: #43413a;
-  height: 30px;
-  border: solid 2px;
-  border-color: rgba(169, 82, 70, 0.2156862745);
-  border-radius: 6px;
-}
-.traiteur .traiteur-right form label .half {
-  width: 200px;
-}
-.traiteur .traiteur-right form label textarea {
-  color: #43413a;
-  width: 400px;
-  border: solid 2px;
-  border-color: rgba(169, 82, 70, 0.2156862745);
-  border-radius: 6px;
-}
-.traiteur .traiteur-right form .form_button {
-  width: 200px;
-  height: 50px;
-  border-radius: 15px;
-  border: none;
-  background-color: #fbdbcd;
-  color: #fff;
-  font-size: 20px;
-}
-@media screen and (max-width: 1280px) {
-  .traiteur {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-    padding: 0 20px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .traiteur {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: auto;
-  }
 }/*# sourceMappingURL=traiteur.css.map */

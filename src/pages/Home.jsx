@@ -5,8 +5,8 @@ import Banner from "../components/Banner";
 import Info from "../components/Info";
 // import MenuJour from "../components/MenuDuJour";
 import homeInfo from "../data/homeInfo.json";
+import menu from "../assets/images/menu.jpg";
 import photoDevanture from "../assets/images/devanture_ouverte.jpg";
-import menuJour from "../assets/images/menu.jpg";
 import formules from "../assets/images/prix_formules.jpg";
 import boissons from "../../src/assets/images/boissons_details.webp";
 import imagePlat1 from "../assets/images/photo_plat_1.jpg";
@@ -61,6 +61,17 @@ const Home = () => {
                 <i className="fa-solid fa-envelope"></i>
               </NavLink>
               <i className="fa-solid fa-map"></i>
+              <div className="map-container" style={{ display: "none" }}>
+                <div className="map-container-iframe">
+                  <iframe
+                    width="100%"
+                    height="500"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=83%20Cr%20Victor%20Hugo,%2033000%20Bordeaux+(Mamacam%20cantine)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  >
+                    <a href="https://www.gps.ie/">gps trackers</a>
+                  </iframe>
+                </div>
+              </div>
             </div>
           </div>
           <div className="home-left-B">
@@ -73,7 +84,7 @@ const Home = () => {
         <div className="home-right">
           <div className="home-right-L">
             {/* <MenuJour /> */}
-            <img src={menuJour} alt="Menu du jour du restaurant Mamacam" />
+            <img src={menu} alt="Menu du jour proposé par Mamacam" />
           </div>
           <div className="home-right-R">
             <img
