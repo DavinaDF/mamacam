@@ -26,48 +26,51 @@ const Traiteur = () => {
         </div>
       </div>
       <div className="traiteur-right">
-        <h3>
-          Pour toute demande prestation traiteur, vous pouvez me contacter par
-          téléphone ou via ce fomulaire{" "}
-        </h3>
-        <ul>
-          Merci de donner un maximum de précisions dans le message :
-          <li>Nombre de personnes prévues</li>
-          <li>Budget</li>
-          <li>Type de prestation : buffet ou à l’assiette</li>
-          <li>Allergies</li>
-          <li>Toute autre information utile</li>
-        </ul>
-        <form className="traiteur-form">
-          <label>
-            Nom prénom - ou Société :
-            <input id="user_name" type="text" name="user_name" />
-          </label>
-          <div className="half">
+        <div className="form-container">
+          <h3>
+            Pour toute demande prestation traiteur, vous pouvez me contacter par
+            téléphone ou via ce fomulaire{" "}
+          </h3>
+          <ul>
+            Merci de donner un maximum de précisions dans le message :
+            <li>Nombre de personnes prévues</li>
+            <li>Budget</li>
+            <li>Type de prestation : buffet ou à l’assiette</li>
+            <li>Allergies</li>
+            <li>Toute autre information utile</li>
+          </ul>
+          <form className="traiteur-form">
             <label>
-              Date de la prestation :
-              <input
-                className="half"
-                type="date"
-                placeholder="jj/mm/aaaa"
-                name="event_date"
-              />
+              Nom prénom - ou Société :
+              <input id="user_name" type="text" name="user_name" />
             </label>
+            <div className="half">
+              <label>
+                Date de la prestation :
+                <input
+                  className="half"
+                  type="date"
+                  placeholder="jj/mm/aaaa"
+                  name="event_date"
+                />
+              </label>
+              <label>
+                Nombre de personnes :
+                <input className="half" type="number" name="number_people" />
+              </label>
+            </div>
             <label>
-              Nombre de personnes :
-              <input className="half" type="number" name="number_people" />
+              Message :
+              <textarea name="message" type="text" rows="10"></textarea>
             </label>
-          </div>
-          <label>
-            Message :<textarea name="message" type="text" rows="10"></textarea>
-          </label>
-          <input
-            className="form_button"
-            type="submit"
-            value="ENVOYER"
-            id="input-submit"
-          />
-        </form>
+            <input
+              className="form_button"
+              type="submit"
+              value="ENVOYER"
+              id="input-submit"
+            />
+          </form>
+        </div>
       </div>
     </div>
   );

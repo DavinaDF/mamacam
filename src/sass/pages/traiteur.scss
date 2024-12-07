@@ -9,7 +9,7 @@
   gap: 20px;
 
   .traiteur-left {
-    flex-basis: 50%;
+    // flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -29,86 +29,90 @@
       overflow: hidden;
       display: flex;
       justify-content: space-between;
+      align-items: end;
       gap: 20px;
       img {
         height: 100%;
         width: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
 
   .traiteur-right {
-    flex-basis: 50%;
-    padding: 20px 30px;
+    // flex-basis: 50%;
     background-color: #fef3ef;
-    display: flex;
-    flex-direction: column;
 
-    h3 {
-      color: #aa5246;
-      font-size: 20px;
-      font-weight: 500;
-    }
-    ul {
-      margin: 6% 0;
-      font-family: "Josefin";
-      font-weight: 350;
-      font-size: 16px;
+    .form-container {
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
 
-      li {
-        margin: 5px;
-        padding-left: 20px;
-        list-style: inside;
-      }
-    }
-
-    form {
-      max-width: 400px;
-
-      label {
-        font-family: "Josefin";
-        font-weight: 500;
-        margin-bottom: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
-
-        input {
-          color: $color-text;
-          height: 30px;
-          border: solid 2px;
-          border-color: #a9524637;
-          border-radius: 6px;
-        }
-        .half {
-          width: 200px;
-        }
-        textarea {
-          color: $color-text;
-          width: 400px;
-          border: solid 2px;
-          border-color: #a9524637;
-          border-radius: 6px;
-        }
-      }
-      .form_button {
-        width: 200px;
-        height: 50px;
-        border-radius: 15px;
-        border: none;
-        background-color: $color-container-darker;
-        color: #fff;
+      h3 {
+        color: #aa5246;
         font-size: 20px;
+        font-weight: 500;
+      }
+      ul {
+        margin: 6% 0;
+        font-family: "Josefin";
+        font-weight: 350;
+        font-size: 16px;
+
+        li {
+          margin: 5px;
+          padding-left: 20px;
+          list-style: inside;
+        }
+      }
+
+      form {
+        max-width: 400px;
+
+        label {
+          font-family: "Josefin";
+          font-weight: 500;
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          input {
+            color: $color-text;
+            height: 30px;
+            border: solid 2px;
+            border-color: #a9524637;
+            border-radius: 6px;
+          }
+          .half {
+            width: 200px;
+          }
+          textarea {
+            color: $color-text;
+            width: 400px;
+            border: solid 2px;
+            border-color: #a9524637;
+            border-radius: 6px;
+          }
+        }
+        .form_button {
+          width: 200px;
+          height: 50px;
+          border-radius: 15px;
+          border: none;
+          background-color: $color-container-darker;
+          color: #fff;
+          font-size: 20px;
+        }
       }
     }
   }
 
   @media screen and (max-width: 1280px) {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
     padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   @media screen and (max-width: 1024px) {
     max-width: 100%;
@@ -116,5 +120,74 @@
     margin: auto;
   }
   @media screen and (max-width: 768px) {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+    .traiteur-right {
+      margin: auto;
+      .form-container {
+        margin: 20px 30px;
+        max-width: 500px;
+        form {
+          // max-width: 400px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          .half {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+          }
+          label {
+            textarea {
+              // max-width: 400px;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .traiteur-left {
+      .photo-container {
+        max-height: 400px;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .traiteur-right {
+      .form-container {
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 20px;
+
+        h3 {
+          font-size: 16px;
+          font-weight: 400;
+        }
+        ul {
+          font-size: 14px;
+
+          li {
+            padding-left: 10px;
+          }
+        }
+        form {
+          max-width: 100%;
+          box-sizing: border-box;
+          label {
+            max-width: 90%;
+          }
+          .half {
+            flex-direction: column;
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }

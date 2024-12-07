@@ -166,8 +166,10 @@
   }
 
   @media screen and (max-width: 1280px) {
-    margin: 0 20px;
-    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 
     .container {
       max-height: none;
@@ -248,12 +250,17 @@
     }
   }
   @media screen and (max-width: 767px) {
+    margin-top: 15px;
     padding: 0 15px;
+    gap: 10px;
     .container {
-      .home-right-R .photo_container {
-        flex-direction: column;
-        img {
-          width: 100%;
+      .home-right {
+        justify-content: space-between;
+        .home-right-R .photo_container {
+          flex-direction: column;
+          img {
+            width: 100%;
+          }
         }
       }
       .home-left-T {
@@ -274,12 +281,45 @@
   @media screen and (max-width: 600px) {
     width: 100%;
     .container {
+      gap: 10px;
       .home-right {
-        height: 100%;
-        .home-right-L,
+        gap: 10px;
+        flex-direction: column;
+        .home-right-L {
+          width: 100%;
+          img {
+            width: 100%;
+          }
+        }
         .home-right-R {
-          width: 50%;
-          max-height: 470px;
+          width: 100%;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 10px;
+          .formules-button,
+          .bouton_boissons {
+            width: 46%;
+          }
+          .photo_container {
+            max-height: 500px;
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .home-left {
+        .home-left-T {
+          flex-direction: column;
+          h1 {
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+          }
+          .social-link {
+            flex-direction: row;
+          }
         }
       }
     }

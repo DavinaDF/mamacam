@@ -5,7 +5,7 @@
   background-color: $color-title;
 
   .footer-container {
-    margin: auto;
+    margin: auto 20px;
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
@@ -26,6 +26,21 @@
       color: #fff;
       font-weight: 100;
       font-size: 13px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .footer-container {
+      .footer-left {
+        margin-left: 10px;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .footer-right {
+        margin-right: 10px;
+        max-width: 30%;
+        text-align: end;
+      }
     }
   }
 }
