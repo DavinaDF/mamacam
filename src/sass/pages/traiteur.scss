@@ -1,18 +1,19 @@
 .traiteur {
   max-width: 1240px;
-  margin: auto;
-  padding: 0 20px;
+  // max-height: 740px;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-around;
-  gap: 2%;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
 
   .traiteur-left {
-    width: 49%;
-    height: 100%;
+    flex-basis: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2%;
+    gap: 20px;
 
     .info {
       h1 {
@@ -24,18 +25,25 @@
     }
 
     .photo-container {
-      height: 50%;
-      margin-top: 20px;
+      flex-grow: 1;
+      overflow: hidden;
       display: flex;
       justify-content: space-between;
       gap: 20px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
   .traiteur-right {
-    width: 49%;
+    flex-basis: 50%;
     padding: 20px 30px;
     background-color: #fef3ef;
+    display: flex;
+    flex-direction: column;
 
     h3 {
       color: #aa5246;
