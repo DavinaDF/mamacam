@@ -11,12 +11,12 @@ const MenuDuJour = () => {
         src="https://www.canva.com/design/DAGWT14QPmE/HHy3ik2ep5TGdluJGKjgIw/view"
         alt=""
       /> */}
-      <iframe
+      {/* <iframe
         loading="lazy"
         src="https://www.canva.com/design/DAGWT14QPmE/HHy3ik2ep5TGdluJGKjgIw/view?embed"
         allow="fullscreen"
         sandbox="allow-scripts allow-same-origin allow-modals"
-      ></iframe>
+      ></iframe> */}
     </div>
   );
 };
