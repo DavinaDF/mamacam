@@ -1,4 +1,4 @@
-import photoDeco from "../assets/images/table-tableau-interieur.png";
+import photoDeco from "../assets/images/table-tableau-interieur.jpg";
 
 const Contact = () => {
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
         />
       </div>
       <div className="right-side">
-        <h2>Contacter MAMACAM par téléphone</h2>
+        <h2>Contacter MAMACAM par message</h2>
         <ul>
           N’hésitez pas à m’envoyer un message avec le formulaire ci-dessous si
           vous souhaitez :<li>Réserver une table</li>

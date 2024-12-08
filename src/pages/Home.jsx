@@ -1,16 +1,17 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Popup from "reactjs-popup";
 import Modal from "../components/Modal";
 import Banner from "../components/Banner";
 import Info from "../components/Info";
 // import MenuJour from "../components/MenuDuJour";
 import homeInfo from "../data/homeInfo.json";
-import menu from "../assets/images/menu.jpg";
-import photoDevanture from "../assets/images/devanture_ouverte.jpg";
-import formules from "../assets/images/prix_formules.jpg";
+import menu from "../assets/images/menu.webp";
+import photoDevanture from "../assets/images/devanture_ouverte.webp";
+import formules from "../assets/images/prix_formules.webp";
 import boissons from "../../src/assets/images/boissons_details.webp";
-import imagePlat1 from "../assets/images/photo_plat_1.jpg";
-import imagePlat2 from "../assets/images/photo_plat_2.jpg";
+import imagePlat1 from "../assets/images/photo_plat_1.webp";
+import imagePlat2 from "../assets/images/photo_plat_2.webp";
 
 const Home = () => {
   const [isVisible, setVisibleModal] = useState(false);
@@ -60,8 +61,33 @@ const Home = () => {
               >
                 <i className="fa-solid fa-envelope"></i>
               </NavLink>
-              <i className="fa-solid fa-map"></i>
-              <div className="map-container" style={{ display: "none" }}>
+              <Popup
+                trigger={
+                  <button>
+                    <i className="fa-solid fa-map"></i>
+                  </button>
+                }
+                modal
+                nested
+              >
+                {(close) => (
+                  <div className="map-modal">
+                    <div className="map-modal-container">
+                      <i
+                        className="fa-solid fa-circle-xmark "
+                        onClick={() => close()}
+                      ></i>
+                      <div className="map-iframe">
+                        <iframe src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=83%20Cr%20Victor%20Hugo,%2033000%20Bordeaux+(Mamacam%20cantine)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                          <a href="https://www.gps.ie/">gps trackers</a>
+                        </iframe>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </Popup>
+
+              {/* <div className="map-container" style={{ display: "none" }}>
                 <div className="map-container-iframe">
                   <iframe
                     width="100%"
@@ -71,7 +97,7 @@ const Home = () => {
                     <a href="https://www.gps.ie/">gps trackers</a>
                   </iframe>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="home-left-B">

@@ -119,7 +119,7 @@ const Header = () => {
                 nav.isActive ? "nav-active" : "nav-inactive"
               }
             >
-              <h2>Evènements</h2>
+              <h2>Evénements</h2>
             </NavLink>
           </div>
           <div className="header-logo">

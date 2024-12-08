@@ -1,7 +1,7 @@
 import Info from "../components/Info";
 import partenaireInfo from "../data/partenaireInfo.json";
-import photoThe from "../assets/images/thes.png";
-import photoKombucha from "../assets/images/kombucha.jpeg";
+import photoThe from "../assets/images/thes.jpg";
+import photoKombucha from "../assets/images/kombucha.webp";
 
 const Partenaires = () => {
   return (

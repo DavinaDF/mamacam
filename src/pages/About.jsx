@@ -1,6 +1,6 @@
-import photoInterieur from "../assets/images/interieur.png";
-import photoMuffin from "../assets/images/muffin.png";
-import photoCookie from "../assets/images/dessert-cookies.jpg";
+import photoInterieur from "../assets/images/Interieur.jpg";
+import photoMuffin from "../assets/images/muffin.jpg";
+import photoCookie from "../assets/images/dessert-cookies.webp";
 
 const About = () => {
   return (

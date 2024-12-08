@@ -15,6 +15,7 @@
     "react-dom": "^18.2.0",
     "react-iframe": "^1.8.5",
     "react-router-dom": "^6.26.2",
+    "reactjs-popup": "^2.0.6",
     "sass": "^1.79.3"
   },
   "devDependencies": {
