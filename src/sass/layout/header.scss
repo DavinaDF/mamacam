@@ -79,10 +79,6 @@
   background-color: #aa5246;
 
   .header-container {
-    .nav-mobile {
-      display: none;
-    }
-
     .nav-desktop {
       width: 90%;
       margin: auto;
@@ -159,6 +155,7 @@
         align-items: center;
         padding: 0 20px;
         .logo {
+          z-index: 20;
           position: absolute;
           left: -30px;
           top: -15px;
@@ -171,6 +168,7 @@
           }
         }
         i {
+          z-index: 20;
           position: absolute;
           width: 80px;
           height: 80px;
@@ -185,8 +183,24 @@
           color: #43413a;
           font-size: 24px;
         }
-        .close {
-          display: none;
+        .menu-links {
+          z-index: 10;
+          margin: 40px auto;
+          width: 100%;
+          padding: 40px 0;
+          background-color: #aa5246;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 30px;
+          h2 {
+            padding: 10px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
         }
       }
     }
