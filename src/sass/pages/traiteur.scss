@@ -47,7 +47,6 @@
       margin: 20px;
       display: flex;
       flex-direction: column;
-
       h3 {
         color: #aa5246;
         font-size: 20px;
@@ -84,15 +83,36 @@
             border-color: #a9524637;
             border-radius: 6px;
           }
-          .half {
-            width: 200px;
+        }
+
+        .half {
+          width: 200px;
+          label {
+            input {
+              height: 40px;
+              justify-content: center;
+            }
           }
-          textarea {
-            color: $color-text;
-            width: 400px;
-            border: solid 2px;
-            border-color: #a9524637;
-            border-radius: 6px;
+        }
+        textarea {
+          color: $color-text;
+          width: 400px;
+          border: solid 2px;
+          border-color: #a9524637;
+          border-radius: 6px;
+        }
+        .half {
+          width: 200px;
+          label {
+            input {
+              height: 40px;
+            }
+            input::placeholder {
+              align-items: center;
+              text-align: center;
+              font-size: 10px;
+              color: red;
+            }
           }
         }
         .form_button {
