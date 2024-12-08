@@ -3,7 +3,7 @@
   height: 760px;
   margin: auto;
   display: flex;
-  gap: 3%;
+  gap: 20px;
 
   h2 {
     font-family: "Gotham";
@@ -68,7 +68,7 @@
         }
         textarea {
           color: $color-text;
-          width: 400px;
+          width: 100%;
           border: solid 2px;
           border-color: #a9524637;
           border-radius: 6px;
@@ -90,12 +90,55 @@
     width: 100%;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
   @media screen and (max-width: 1024px) {
     max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     padding: 0 20px;
     margin: auto;
+    h2 {
+      font-size: 20px;
+    }
+    .left-side {
+      height: 100%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .right-side {
+      padding: 20px;
+    }
   }
   @media screen and (max-width: 768px) {
+    margin-top: 20px;
+
+    .left-side {
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    img {
+      display: none;
+    }
+    flex-direction: column;
+    .left-side {
+      width: 100%;
+      .bloc {
+        padding: 20px;
+      }
+    }
+    .right-side {
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 }

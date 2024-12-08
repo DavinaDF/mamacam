@@ -78,12 +78,46 @@
     width: 100%;
     margin: auto;
     padding: 0 20px;
+    box-sizing: border-box;
   }
   @media screen and (max-width: 1024px) {
-    max-width: 100%;
-    padding: 0 20px;
-    margin: auto;
   }
   @media screen and (max-width: 768px) {
+    max-width: none;
+    max-height: none;
+    width: 100%;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    .left-side {
+      width: 100%;
+      .infos {
+        padding: 20px;
+        h1 {
+          font-size: 20px;
+        }
+        .info-container {
+          flex-direction: column;
+          gap: 10px;
+        }
+        .info-item {
+          gap: 20px;
+        }
+      }
+    }
+    .right-side {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      img {
+        width: 40%;
+      }
+      .bloc {
+        width: 40%;
+        padding: 10px;
+      }
+    }
   }
 }
