@@ -180,20 +180,25 @@
 @media screen and (max-width: 767px) {
   .timeline::after {
     top: 20px;
-    left: 20px;
+    left: 40px;
     right: 20px;
   }
   .timeline {
+    max-width: calc(100% - 40px);
+    width: calc(100% - 40px);
     box-sizing: border-box;
     margin: 20px;
     .container {
       width: calc(100% - 40px);
-      margin: 0 20px;
+      margin: auto;
+      box-sizing: border-box;
     }
     #container {
       position: relative;
-      margin: 10px;
+      margin: 10px auto;
       align-items: center;
+      max-width: 80%;
+      box-sizing: border-box;
       img {
         width: 100px;
         height: 100px;
@@ -203,6 +208,7 @@
       }
 
       .content {
+        box-sizing: border-box;
         .tag {
           height: 20px;
           width: 100px;
@@ -230,11 +236,11 @@
     .container.left::before,
     .container.right::before {
       width: 30px;
-      left: -21px;
+      left: -30px;
     }
     .container {
       position: relative;
-      margin: 10px 0;
+      margin: auto;
       width: 100%;
       box-sizing: border-box;
       border: 2px solid #00463c;
@@ -249,7 +255,7 @@
     .container.right::after {
       width: 22px;
       height: 22px;
-      left: -26px;
+      left: -40px;
     }
   }
 }
