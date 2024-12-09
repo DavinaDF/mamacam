@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="about">
       <div className="left-side">
-        <div className="bloc">
+        <div className="bloc bien_manger">
           <h2>Bien manger au rythme des saisons</h2>
           <p>
             Chez MAMACAM vous trouverez une cuisine simple, goûteuse et

@@ -1,9 +1,10 @@
 import photoDeco from "../assets/images/table-tableau-interieur.jpg";
 import emailjs from "@emailjs/browser";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [message, setMessage] = useState(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -14,12 +15,19 @@ const Contact = () => {
       })
       .then(
         () => {
-          console.log("Message envoyé avec succès !");
+          setMessage("Votre message a bien été envoyé !");
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
         },
-        (error) => {
-          console.log("Erreur : ", error.text);
+        () => {
+          setMessage("Une erreur est survenue, veuillez réessaye.");
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
         }
       );
+    e.target.reset();
   };
 
   return (
@@ -53,8 +61,13 @@ const Contact = () => {
             <input id="user_name" type="text" name="from_name" />
           </label>
           <label>
-            Message :<textarea name="message" type="text" rows="20"></textarea>
+            Adresse mail :
+            <input id="user_mail" type="email" name="user_email" />
           </label>
+          <label>
+            Message :<textarea name="message" type="text" rows="14"></textarea>
+          </label>
+          {message && <p>{message}</p>}
           <input
             className="form_button"
             type="submit"

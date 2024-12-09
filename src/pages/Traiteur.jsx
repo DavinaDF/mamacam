@@ -1,9 +1,38 @@
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 import Info from "../components/Info";
 import traiteurInfo from "../data/traiteurInfo.json";
 import photoTraiteur1 from "../assets/images/image_traiteur_1.webp";
 import photoTraiteur2 from "../assets/images/image_traiteur_2.webp";
 
 const Traiteur = () => {
+  const form = useRef();
+  const [message, setMessage] = useState(null);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_p91bcjt", "traiteur_form", form.current, {
+        publicKey: "m8pVCfE9WPOsslQ1e",
+      })
+      .then(
+        () => {
+          setMessage("Votre demande a bien été envoyé !");
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
+        },
+        () => {
+          setMessage("Une erreur est survenue, veuillez réessaye.");
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
+        }
+      );
+    e.target.reset();
+  };
+
   return (
     <div className="traiteur">
       <div className="traiteur-left">
@@ -39,10 +68,14 @@ const Traiteur = () => {
             <li>Allergies</li>
             <li>Toute autre information utile</li>
           </ul>
-          <form className="traiteur-form">
+          <form className="traiteur-form" ref={form} onSubmit={sendEmail}>
             <label>
               Nom prénom - ou Société :
-              <input id="user_name" type="text" name="user_name" />
+              <input id="user_name" type="text" name="user_name" required />
+            </label>
+            <label>
+              Adresse mail :
+              <input id="user_mail" type="email" name="user_email" required />
             </label>
             <div className="half">
               <label>
@@ -63,6 +96,7 @@ const Traiteur = () => {
               Message :
               <textarea name="message" type="text" rows="10"></textarea>
             </label>
+            {message && <p>{message}</p>}
             <input
               className="form_button"
               type="submit"
