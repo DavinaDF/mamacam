@@ -79,6 +79,9 @@
   background-color: #aa5246;
 
   .header-container {
+    .nav-mobile {
+      display: none;
+    }
     .nav-desktop {
       width: 90%;
       margin: auto;
