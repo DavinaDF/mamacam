@@ -136,8 +136,13 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .timeline .container {
+  .timeline {
     width: calc(100% - 40px);
+    box-sizing: border-box;
+  }
+  .timeline .container {
+    width: 40%;
+    box-sizing: border-box;
     margin: 0 20px;
   }
   .timeline .container.left {
