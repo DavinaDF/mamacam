@@ -1,6 +1,27 @@
 import photoDeco from "../assets/images/table-tableau-interieur.jpg";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_p91bcjt", "contact_form", form.current, {
+        publicKey: "m8pVCfE9WPOsslQ1e",
+      })
+      .then(
+        () => {
+          console.log("Message envoyé avec succès !");
+        },
+        (error) => {
+          console.log("Erreur : ", error.text);
+        }
+      );
+  };
+
   return (
     <div className="contact">
       <div className="left-side">
@@ -26,10 +47,10 @@ const Contact = () => {
           <li>Poser des questions</li>
           <li>etc ...</li>
         </ul>
-        <form className="traiteur-form">
+        <form className="traiteur-form" ref={form} onSubmit={sendEmail}>
           <label>
             Nom prénom - ou Société :
-            <input id="user_name" type="text" name="user_name" />
+            <input id="user_name" type="text" name="from_name" />
           </label>
           <label>
             Message :<textarea name="message" type="text" rows="20"></textarea>

@@ -1,7 +1,7 @@
 [
   {
     "icon": "fa-solid fa-carrot",
-    "text": "Les fruits et légumes proviennent en partie de chez <h4>Sébastien</h4>, producteurs bio dans le Gers (producteur bio présent le samedi matin au marché de Léognan)."
+    "text": "Les fruits et légumes proviennent en partie de chez Sébastien, producteurs bio dans le Gers (producteur bio présent le samedi matin au marché de Léognan)."
   },
   {
     "icon": "fa-solid fa-basket-shopping",
@@ -9,7 +9,7 @@
   },
   {
     "icon": "fa-solid fa-mug-hot",
-    "text": "Les thés, tisanes et infusions sont sourcées, préparées et vendues par Grégory et Lesly de chez Un air de thé. </br>Le café est sélectionné et torréfié par l'Alchimiste basé à Darwin."
+    "text": "Les thés, tisanes et infusions sont sourcées, préparées et vendues par Grégory et Lesly de chez Un air de thé. Le café est sélectionné et torréfié par l'Alchimiste basé à Darwin."
   },
   {
     "icon": "fa-solid fa-bottle-droplet",
@@ -17,6 +17,6 @@
   },
   {
     "icon": "fa-solid fa-beer-mug-empty",
-    "text": "Les bières de chez Maison PIP. </br>Le cidre de chez Fils de pomme"
+    "text": "Les bières de chez Maison PIP. Le cidre de chez Fils de pomme"
   }
 ]
