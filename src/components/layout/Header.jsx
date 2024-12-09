@@ -62,7 +62,7 @@
 
 // export default Header;
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../assets/logo_header_desktop.png";
 
@@ -74,7 +74,9 @@ const Header = () => {
       <div className="header-container">
         <div className="nav-mobile">
           <div className="logo">
-            <img src={logo} alt="logo Mamacam haut de page" />
+            <Link to="/">
+              <img src={logo} alt="logo Mamacam haut de page" />
+            </Link>
           </div>
           <i
             className="fa-solid fa-bars menu-button"
@@ -131,7 +133,9 @@ const Header = () => {
             </NavLink>
           </div>
           <div className="header-logo">
-            <img src={logo} alt="logo Mamacam haut de page" />
+            <Link to="/">
+              <img src={logo} alt="logo Mamacam haut de page" />
+            </Link>
           </div>
           <div className="header-nav-right">
             <NavLink

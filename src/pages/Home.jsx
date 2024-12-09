@@ -78,7 +78,12 @@ const Home = () => {
                         onClick={() => close()}
                       ></i>
                       <div className="map-iframe">
-                        <iframe src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=83%20Cr%20Victor%20Hugo,%2033000%20Bordeaux+(Mamacam%20cantine)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        <iframe
+                          src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=83%20Cr%20Victor%20Hugo,%2033000%20Bordeaux+(Mamacam%20cantine)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                          width={500}
+                          height={500}
+                          sandbox="allow-same-origin allow-scripts allow-popups"
+                        >
                           <a href="https://www.gps.ie/">gps trackers</a>
                         </iframe>
                       </div>
