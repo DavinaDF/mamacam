@@ -6,7 +6,7 @@ import Banner from "../components/Banner";
 import Info from "../components/Info";
 // import MenuJour from "../components/MenuDuJour";
 import homeInfo from "../data/homeInfo.json";
-import menu from "../assets/images/menu.webp";
+import menu from "../assets/images/menu.jpg";
 import photoDevanture from "../assets/images/devanture_ouverte.webp";
 import formules from "../assets/images/prix_formules.webp";
 import boissons from "../../src/assets/images/boissons_details.webp";
