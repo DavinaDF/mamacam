@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./pages/Home";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/mentions" element={<Mentions />} />
       </Routes>
       <Footer />
+      <Analytics />
     </BrowserRouter>
   );
 };
