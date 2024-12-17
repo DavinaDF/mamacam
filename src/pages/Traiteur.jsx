@@ -94,7 +94,12 @@ const Traiteur = () => {
             </div>
             <label>
               Message :
-              <textarea name="message" type="text" rows="10"></textarea>
+              <textarea
+                name="message"
+                type="text"
+                rows="10"
+                required
+              ></textarea>
             </label>
             {message && <p>{message}</p>}
             <input
