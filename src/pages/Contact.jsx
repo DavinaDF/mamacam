@@ -58,14 +58,15 @@ const Contact = () => {
         <form className="traiteur-form" ref={form} onSubmit={sendEmail}>
           <label>
             Nom prénom - ou Société :
-            <input id="user_name" type="text" name="from_name" />
+            <input id="user_name" type="text" name="from_name" required />
           </label>
           <label>
             Adresse mail :
-            <input id="user_mail" type="email" name="user_email" />
+            <input id="user_mail" type="email" name="user_email" required />
           </label>
           <label>
-            Message :<textarea name="message" type="text" rows="14"></textarea>
+            Message :
+            <textarea name="message" type="text" rows="14" required></textarea>
           </label>
           {message && <p>{message}</p>}
           <input
