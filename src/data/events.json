@@ -6,7 +6,7 @@
     "date": "13.02.2024 de 18h30 à 21h",
     "description": "Vernisasage de l'exposition Fin de Service, avec tapas et boissons à pris tout doux",
     "price": "Entrée gratuite",
-    "moment": "container right over"
+    "moment": "container right current"
   },
   {
     "image": "/images/events/tartinade.jpg",
@@ -15,7 +15,7 @@
     "date": "A partir de novembre",
     "description": "Pour agrémenter vos repas de fin d'année, je vous propose la fameuse tartinade de mauvaise fois",
     "price": "10€",
-    "moment": "container left current"
+    "moment": "container left over"
   },
   {
     "image": "/images/events/expo-couleurs.jpg",
