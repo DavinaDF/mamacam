@@ -68,7 +68,7 @@
 }
 .timeline .container.left {
   margin: 0 20px;
-  left: 40px;
+  left: 45px;
 }
 .timeline .container.right {
   margin: 0 20px;
@@ -91,10 +91,10 @@
   left: -64px;
 }
 .timeline .container.left::after {
-  right: -70px;
+  right: -65px;
 }
 .timeline .container.left::before {
-  right: -37px;
+  right: -32px;
 }
 .timeline .container.right::before {
   left: -32px;
@@ -105,7 +105,7 @@
   width: 30px;
   height: 2px;
   top: calc(50% - 1px);
-  right: -12px;
+  right: -1px;
   background: #00463c;
   z-index: 1;
 }
@@ -145,23 +145,26 @@
     box-sizing: border-box;
     margin: 0 20px;
   }
+  .timeline .container::before {
+    width: 20px;
+  }
   .timeline .container.left {
-    left: -5px;
+    left: 40px;
   }
   .timeline .container.right {
     right: calc(-50% - 5px);
   }
   .timeline .container.right::after {
-    left: -64px;
+    left: -44px;
   }
   .timeline .container.left::after {
-    right: -58px;
+    right: -50px;
   }
   .timeline .container.left::before {
-    right: -35px;
+    right: -20px;
   }
   .timeline .container.right::before {
-    left: -40px;
+    left: -20px;
   }
 }
 @media screen and (max-width: 767px) {
