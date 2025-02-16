@@ -71,8 +71,8 @@
   left: 40px;
 }
 .timeline .container.right {
-  margin: 0 30px;
-  right: calc(-50% - 15px);
+  margin: 0 20px;
+  right: calc(-50% - 25px);
 }
 .timeline .container::after {
   content: "";
@@ -94,7 +94,7 @@
   right: -70px;
 }
 .timeline .container.left::before {
-  right: -50px;
+  right: -37px;
 }
 .timeline .container.right::before {
   left: -32px;
@@ -102,7 +102,7 @@
 .timeline .container::before {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 30px;
   height: 2px;
   top: calc(50% - 1px);
   right: -12px;
@@ -124,7 +124,7 @@
 }
 
 .container::after {
-  background: #ffffff !important;
+  background-color: #ffffff !important;
   border: 2px solid #00463c;
   border-radius: 16px;
   z-index: 1;

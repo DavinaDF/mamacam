@@ -77,8 +77,8 @@
   }
 
   .container.right {
-    margin: 0 30px;
-    right: calc(-50% - 15px);
+    margin: 0 20px;
+    right: calc(-50% - 25px);
   }
 
   .container::after {
@@ -102,7 +102,7 @@
     right: -70px;
   }
   .container.left::before {
-    right: -50px;
+    right: -37px;
   }
   .container.right::before {
     left: -32px;
@@ -110,7 +110,7 @@
   .container::before {
     content: "";
     position: absolute;
-    width: 10%;
+    width: 30px;
     height: 2px;
     top: calc(50% - 1px);
     right: -12px;
@@ -137,7 +137,7 @@
 }
 
 .container::after {
-  background: #ffffff !important;
+  background-color: #ffffff !important;
   border: 2px solid #00463c;
   border-radius: 16px;
   z-index: 1;
