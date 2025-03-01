@@ -1,22 +1,32 @@
+import { useEffect, useState } from "react";
+import { getLatestMenu } from "../services/menuService";
+
 const MenuDuJour = () => {
+  const [menu, setMenu] = useState(null);
+
+  useEffect(() => {
+    const fetchMenu = async () => {
+      try {
+        const latestMenu = await getLatestMenu();
+        setMenu(latestMenu);
+      } catch (error) {
+        console.error("Erreur lors de la récupération du menu:", error);
+      }
+    };
+
+    fetchMenu();
+  }, []);
+
   return (
-    <div className="menu-container">
-      {/* <iframe
-        className="menu-canva"
-        sandbox="allow-same-origin allow-scripts allow-modals allow-forms"
-        loading="eager"
-        src="https://www.canva.com/design/DAEeBArgL-Q/XVpKwnYmuCIFqxULuvDQAA/view?embed"
-      ></iframe> */}
-      {/* <img
-        src="https://www.canva.com/design/DAGWT14QPmE/HHy3ik2ep5TGdluJGKjgIw/view"
-        alt=""
-      /> */}
-      {/* <iframe
-        loading="lazy"
-        src="https://www.canva.com/design/DAGWT14QPmE/HHy3ik2ep5TGdluJGKjgIw/view?embed"
-        allow="fullscreen"
-        sandbox="allow-scripts allow-same-origin allow-modals"
-      ></iframe> */}
+    <div>
+      {menu ? (
+        <img
+          src={`${import.meta.env.VITE_API_URL}${menu.imageUrl}`}
+          alt={menu.fileName}
+        />
+      ) : (
+        <p>Chargement du menu...</p>
+      )}
     </div>
   );
 };
