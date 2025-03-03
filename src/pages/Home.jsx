@@ -7,7 +7,8 @@ import Info from "../components/Info";
 // import MenuJour from "../components/MenuDuJour";
 import homeInfo from "../data/homeInfo.json";
 import photoDevanture from "../assets/images/devanture_ouverte.webp";
-import MenuDuJour from "../components/MenuDuJour";
+// import MenuDuJour from "../components/MenuDuJour";
+import menu from "../assets/images/menu.png";
 import formules from "../assets/images/prix_formules.webp";
 import boissons from "../../src/assets/images/boissons_details.webp";
 import imagePlat1 from "../assets/images/photo_plat_1.webp";
@@ -114,7 +115,8 @@ const Home = () => {
         </div>
         <div className="home-right">
           <div className="home-right-L">
-            <MenuDuJour />
+            {/* <MenuDuJour /> */}
+            <img src={menu} alt="menu du jour" />
           </div>
           <div className="home-right-R">
             <img

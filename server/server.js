@@ -8,7 +8,7 @@ import { dirname } from "path";
 dotenv.config({ path: new URL("../.env", import.meta.url).pathname });
 
 const app = express();
-const PORT = 3001;
+const PORT = 5173;
 const FOLDER_ID = "1rXN80DESiGyL-bPW-fWI4yyD9EOHEVao"; // Remplacez par votre véritable ID de dossier
 
 // Ajoutez ces lignes pour définir __dirname
@@ -23,7 +23,7 @@ app.use(express.static("public"));
 
 // Configuration du compte de service
 const auth = new google.auth.GoogleAuth({
-  keyFile: `${__dirname}/../credentials.json`,
+  keyFile: `${__dirname}/../client_secret.json`,
   scopes: ["https://www.googleapis.com/auth/drive.readonly"],
 });
 
